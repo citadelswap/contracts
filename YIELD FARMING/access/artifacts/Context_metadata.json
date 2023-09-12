@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"FARMING/access/Context.sol": "Context"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"FARMING/access/Context.sol": {
+			"keccak256": "0xdfad2f67f9b90ef469e7cf45254362ba070ed7b6b24178522a0f23b17ef742c6",
+			"license": "GPL-3.0-or-later",
+			"urls": [
+				"bzz-raw://8a55551a42833a3ce0d60a6f7f697e983aba2daa16c1032311e9ca41b896dfaf",
+				"dweb:/ipfs/QmQKqXVrMfhwPLb184AmCxPNMiK1KxrpxVavwfnbuJQXAL"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,205 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [],
+				"name": "DisableWhitelist",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [],
+				"name": "EnableWhitelist",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "whitelist",
+						"type": "bool"
+					}
+				],
+				"name": "Whitelisted",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bool",
+						"name": "disable",
+						"type": "bool"
+					}
+				],
+				"name": "disableWhitelist",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "isWhitelist",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "renounceOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "_on",
+						"type": "bool"
+					}
+				],
+				"name": "setWhitelist",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"owner()": {
+					"details": "Returns the address of the current owner."
+				},
+				"renounceOwnership()": {
+					"details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+				},
+				"transferOwnership(address)": {
+					"details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"FARMING/library/Whitelist.sol": "Whitelist"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"FARMING/access/Context.sol": {
+			"keccak256": "0xdfad2f67f9b90ef469e7cf45254362ba070ed7b6b24178522a0f23b17ef742c6",
+			"license": "GPL-3.0-or-later",
+			"urls": [
+				"bzz-raw://8a55551a42833a3ce0d60a6f7f697e983aba2daa16c1032311e9ca41b896dfaf",
+				"dweb:/ipfs/QmQKqXVrMfhwPLb184AmCxPNMiK1KxrpxVavwfnbuJQXAL"
+			]
+		},
+		"FARMING/access/Ownable.sol": {
+			"keccak256": "0xa036bec141099cb001627e520dfa5858b3c16ed4c4cbbda6ed9b040d307b2817",
+			"license": "GPL-3.0-or-later",
+			"urls": [
+				"bzz-raw://f739c77000cff2f766c2dd0f465a10860a2a7887ab1fbf0f52bb5d8622266e46",
+				"dweb:/ipfs/QmUeiTWQ7r1wc7H9ifNMnWcNx5iAncBVLf7n65NfPEzQ3d"
+			]
+		},
+		"FARMING/library/Whitelist.sol": {
+			"keccak256": "0xbb3830301924b1ae02dd7bc0dd89f402d999b80cde78bf252dab5d99373e7205",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d86bcf425a8464cd3813244207bbbd7b883c74c9c420c7dcd99d8d54287c616c",
+				"dweb:/ipfs/QmcGS4AYPb27uyX77JXgq6dDw846pW2EMQCiwSrYMSpt8h"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,71 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"details": "Wrappers around BEP20 operations that throw on failure (when the token contract returns false). Tokens that return no value (and instead revert or throw on failure) are also supported, non-reverting calls are assumed to be successful. To use this library you can add a `using SafeBEP20 for IBEP20;` statement to your contract, which allows you to call the safe operations as `token.safeTransfer(...)`, etc.",
+			"kind": "dev",
+			"methods": {},
+			"title": "SafeBEP20",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"FARMING/utils/SafeBEP20.sol": "SafeBEP20"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"FARMING/interfaces/IBEP20.sol": {
+			"keccak256": "0xe6555dcb6ec5cb9dcaf2322cf003a1e3d2257471768b32cdc433025a0bc3ac3d",
+			"license": "GPL-3.0-or-later",
+			"urls": [
+				"bzz-raw://a1f47d4071cfc9f31174526b1a63d0be2169a199f0a5b9819267d9d070adad6d",
+				"dweb:/ipfs/QmcmHiuPjMSXZLNubeScGkXvWAz6dM1cciv5zGPNJaK9Po"
+			]
+		},
+		"FARMING/library/SafeMath.sol": {
+			"keccak256": "0x61f7309b48f11de8884e26542b911fdff2534e899f212e34eb4e399e57a9c867",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7eb4cf168b5b3422ee4aafc518537e6341b26ae38d8e3b8d8c96f17e71fe6301",
+				"dweb:/ipfs/Qmes9Noj9pTL8zQ4hkZEFHYBdVgNjsn166fY4VqXQsMbDv"
+			]
+		},
+		"FARMING/utils/Address.sol": {
+			"keccak256": "0xbe2939e35a126bed12382b07d3729489c3536aa84188af5682427877595b83ed",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4b77767cd892d4718296d8e8a52b6bd0167643d9c1e8e62099d33a650cfd040d",
+				"dweb:/ipfs/QmepRNrdk5r4FXffRf6nraTQPLqZidMYpZ6XTUBo8oVNrg"
+			]
+		},
+		"FARMING/utils/SafeBEP20.sol": {
+			"keccak256": "0x736b7df5455c6cffdc1d6dd17b9e3271441e326bff6052ae5afd32a0ba4848c8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0a8ca4ddea200dba45afec0a108c7bc4f9cd9c74901ffadcdae9d245b6169eac",
+				"dweb:/ipfs/QmSxuBuoXE4zD3ESeWYZCd7Xrp3NhRyC95MBr4SqRD8UUE"
+			]
+		}
+	},
+	"version": 1
+}
